@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tres en Raya</string>
+    <string name="dificultades">Levels:</string>
+    <string name="rb_facil">Easy</string>
+    <string name="rb_normal">Regular</string>
+    <string name="rb_pa2">For two</string>
+    <string name="boton_jugar">Play</string>
+    <string name="turno">Turn</string>
+    <string name="valor">x</string>
+    <string name="descripcion_ficha"></string>
+    <string name="boton_menu">Menu</string>
+    <string name="jugador">Player</string>
+    <string name="boton_reiniciar">Reboot</string>
+    <string name="felicidades">Congratulations</string>
+</resources>

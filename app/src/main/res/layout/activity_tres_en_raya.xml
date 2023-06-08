@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".tresEnRayaPareja">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margen_vertical_actividad"
+        android:paddingTop="@dimen/margen_horizontal_actividad"
+        android:paddingRight="@dimen/margen_vertical_actividad"
+        android:paddingBottom="@dimen/margen_horizontal_actividad">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_medium"
+            android:gravity="center"
+            android:textColor= "#A8A8A8"
+            android:text="@string/app_name"
+            android:textSize="35sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ganaTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntu"
+                android:textColor= "#A8A8A8"
+                android:gravity="right|center_horizontal"
+                android:text="@string/turno"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <TextView
+                android:id="@+id/turnoTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntu"
+                android:textColor= "#A8A8A8"
+                android:gravity="left"
+                android:text="@string/valor"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </LinearLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/fichasGridLayout"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFEB3B"
+            app:columnCount="3">
+
+
+            <!--==salto de linea==-->
+            <TextView
+                android:id="@+id/casillaTextView0"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="true"
+                android:background="#F0F0F0F0"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center_horizontal"
+                android:text="@string/descripcion_ficha"
+                android:textAlignment="center"
+                android:textSize="60sp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center|left|center_vertical" />
+
+            <TextView
+                android:id="@+id/casillaTextView1"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="true"
+                android:background="#F0F0F0F0"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center_horizontal"
+                android:text="@string/descripcion_ficha"
+                android:textAlignment="center"
+                android:textSize="60sp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center|center_vertical" />
+
+            <TextView
+                android:id="@+id/casillaTextView2"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="true"
+                android:background="#F0F0F0F0"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center_horizontal"
+                android:text="@string/descripcion_ficha"
+                android:textAlignment="center"
+                android:textSize="60sp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="right|center_vertical" />
+
+            <!--==salto de linea==-->
+            <TextView
+                android:id="@+id/casillaTextView3"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="7dp"
+                android:adjustViewBounds="true"
+                android:background="#F0F0F0F0"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/descripcion_ficha"
+                android:textAlignment="center"
+                android:textSize="60sp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="left" />
+
+            <TextView
+                android:id="@+id/casillaTextView4"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="7dp"
+                android:adjustViewBounds="true"
+                android:background="#F0F0F0F0"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center_horizontal"
+                android:text="@string/descripcion_ficha"
+                android:textAlignment="center"
+                android:textSize="60sp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center|center_vertical" />
+
+            <TextView
+                android:id="@+id/casillaTextView5"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="7dp"
+                android:adjustViewBounds="true"
+                android:background="#F0F0F0F0"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center_horizontal"
+                android:text="@string/descripcion_ficha"
+                android:textAlignment="center"
+                android:textSize="60sp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="right|center_vertical" />
+            <!--==salto de linea==-->
+            <TextView
+                android:id="@+id/casillaTextView6"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="true"
+                android:background="#F0F0F0F0"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center_horizontal"
+                android:text="@string/descripcion_ficha"
+                android:textAlignment="center"
+                android:textSize="60sp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center|left|center_vertical" />
+
+            <TextView
+                android:id="@+id/casillaTextView7"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="true"
+                android:background="#F0F0F0F0"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center_horizontal"
+                android:text="@string/descripcion_ficha"
+                android:textAlignment="center"
+                android:textSize="60sp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center|center_vertical" />
+
+            <TextView
+                android:id="@+id/casillaTextView8"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="true"
+                android:background="#F0F0F0F0"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center_horizontal"
+                android:text="@string/descripcion_ficha"
+                android:textAlignment="center"
+                android:textSize="60sp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="right|center_vertical" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/menuButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/margen_boton"
+                android:layout_marginRight="@dimen/margen_boton"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/boton_menu" />
+
+            <Button
+                android:id="@+id/reiniciarButton"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="@dimen/margen_boton"
+                android:layout_marginRight="@dimen/margen_boton"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/boton_reiniciar" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

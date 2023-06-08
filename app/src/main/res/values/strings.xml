@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tres en Raya</string>
+    <string name="dificultades">Dificultades:</string>
+    <string name="rb_facil">Facíl</string>
+    <string name="rb_normal">Normal</string>
+    <string name="rb_pa2">Para 2 jugadores</string>
+    <string name="boton_jugar">Jugar</string>
+    <string name="turno">Turno: </string>
+    <string name="descripcion_ficha"></string>
+    <string name="valor">x</string>
+    <string name="boton_menu">Menú</string>
+    <string name="jugador">Jugador</string>
+    <string name="boton_reiniciar">Reinicio</string>
+    <string name="felicidades">Felicidades</string>
+</resources>
